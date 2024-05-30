@@ -11,18 +11,19 @@ app.get("/", (req,res) => {
     res.send("Hellosss typescript + Node.js + Express!!!")
 })
 
-app.listen(PORT, () => {
-    console.log(`Server runnning on ${PORT}`)
-})
 
-app.post("/review", (req,res) => {
+app.gett("/review", (req,res) => {
     res.send("Reviewing legal document")
 })
 
-app.post("/generate", (req,res) => {
+app.gett("/generate", (req,res) => {
     res.send("generating legal document")
 })
 
-app.post("/research", (req,res) => {
+app.gett("/research", (req,res) => {
     res.send("Researching Legal documents")
+})
+
+app.listen(PORT, () => {
+    console.log(`Server runnning on ${PORT}`)
 })
