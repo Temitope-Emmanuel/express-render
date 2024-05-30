@@ -12,15 +12,15 @@ app.get("/", (req,res) => {
 })
 
 
-app.gett("/review", (req,res) => {
+app.get("/review", (req,res) => {
     res.send("Reviewing legal document")
 })
 
-app.gett("/generate", (req,res) => {
+app.get("/generate", (req,res) => {
     res.send("generating legal document")
 })
 
-app.gett("/research", (req,res) => {
+app.get("/research", (req,res) => {
     res.send("Researching Legal documents")
 })
 
